@@ -8,4 +8,5 @@ let db = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
     host: DB_HOST
 });
 
+db.sync();
 module.exports = db;
