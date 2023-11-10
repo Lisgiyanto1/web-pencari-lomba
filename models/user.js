@@ -1,9 +1,9 @@
 // Package
-const Sequelize = require("sequelize");
-const db = require("../database");
+import Sequelize from "sequelize";
+import db from "../database.js"
 
 // Model
-let user = db.define("user",
+const user = db.define("user",
     {
         username: {
             type: Sequelize.STRING(32),
@@ -22,4 +22,4 @@ let user = db.define("user",
 );
 
 user.removeAttribute("id");
-module.exports = user;
+export default user;

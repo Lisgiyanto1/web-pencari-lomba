@@ -1,11 +1,11 @@
 // Package
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
 // Controller
-const controller = require("./controllers/page");
+import * as controller from "./controllers/page.js"
 
 // Route
 router.get("/", controller.index);
 
-module.exports = router;
+export default router;

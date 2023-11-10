@@ -1,6 +1,8 @@
 // Package
-const express = require("express");
-const dotenv = require("dotenv");
+// const express = require("express");
+// const dotenv = require("dotenv");
+import express from "express";
+import dotenv from "dotenv";
 
 // Inisialisasi .env
 dotenv.config();
@@ -10,7 +12,8 @@ const app = express();
 const { APP_PORT: port } = process.env;
 
 // Routing
-const route = require("./route");
+// const route = require("./route");
+import route from "./route.js";
 
 // Express middleware
 app.set("view engine", "ejs");
@@ -18,7 +21,7 @@ app.set("view engine", "ejs");
 app.use(express.static("./public"));
 app.use(express.json());
 
-app.use("/",route);
+app.use("/", route);
 
 // Start server
 app.listen(port, () => {

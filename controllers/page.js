@@ -1,8 +1,9 @@
 // Model
-const user = require("../models/user");
+// const user = require("../models/user");
+import user from "../models/user.js";
 
 // Controller
-async function index(req, res) {
+export async function index(req, res) {
     try {
         // Operasi CRUD disini
         await user.create({
@@ -15,11 +16,11 @@ async function index(req, res) {
 
     }
 
-    // Buat lihat balik datanya
-    let data = await User.findAll();
-    res.status(200).json(data);
-}
+    try {
+        // Buat lihat balik datanya
+        let data = await user.findAll();
+        res.status(200).json(data);
+    } catch (e) {
 
-module.exports = {
-    index,
+    }
 }
