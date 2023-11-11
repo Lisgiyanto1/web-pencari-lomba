@@ -1,17 +1,19 @@
 // Package
-import Sequelize from "sequelize";
-import db from "../database.js"
+import { DataTypes } from "sequelize";
+import db from "../database.js";
 
 // Model
 const user = db.define("user",
     {
         username: {
-            type: Sequelize.STRING(32),
-            primaryKey: true,
+            type: DataTypes.STRING(32),
+            primaryKey: true
         },
-        password: Sequelize.STRING(64),
+        password: {
+            type: DataTypes.STRING(64)
+        },
         is_admin: {
-            type: Sequelize.BOOLEAN,
+            type: DataTypes.BOOLEAN,
             defaultValue: false
         }
     },

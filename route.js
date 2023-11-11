@@ -1,11 +1,13 @@
 // Package
-import express from "express";
-const router = express.Router();
+import { Router } from "express";
+const router = Router();
 
 // Controller
-import * as controller from "./controllers/page.js"
+import * as PageController from "./controllers/page.js";
+import * as UserController from "./controllers/user.js";
 
 // Route
-router.get("/", controller.index);
+router.get("/", PageController.index);
+router.get("/create", UserController.c);
 
 export default router;
