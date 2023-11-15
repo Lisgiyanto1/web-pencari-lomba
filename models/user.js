@@ -10,7 +10,7 @@ const user = db.define("user",
             primaryKey: true
         },
         password: {
-            type: DataTypes.STRING(64)
+            type: DataTypes.STRING(128)
         },
         is_admin: {
             type: DataTypes.BOOLEAN,
