@@ -10,7 +10,7 @@ const app = express();
 const { APP_PORT: port } = process.env;
 
 // Routing
-import route from "./route.js";
+import route from "./routes/web.js";
 
 // Express middleware
 app.set("view engine", "ejs");
