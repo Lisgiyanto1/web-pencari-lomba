@@ -1,4 +1,3 @@
-// Package
 import { DataTypes } from "sequelize";
 import db from "../database.js";
 
