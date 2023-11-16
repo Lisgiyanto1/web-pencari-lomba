@@ -17,6 +17,10 @@ const user = db.define("user",
             type: DataTypes.BOOLEAN,
             defaultValue: false,
             allowNull: false
+        },
+        foto_profil: {
+            type: DataTypes.STRING(512),
+            allowNull: false
         }
     },
     {
