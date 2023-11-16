@@ -1,4 +1,3 @@
-import { DataTypes } from "sequelize";
 import db from "../database.js";
 
 import dosen from "./dosen.js";

@@ -1,4 +1,3 @@
-import { DataTypes } from "sequelize";
 import db from "../database.js";
 
 import kategori from "./kategori.js";
