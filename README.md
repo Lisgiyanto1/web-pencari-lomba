@@ -4,3 +4,5 @@
 2. Lisgiyanto Sofiyan
 3. Rizky Dwi Purnama
 4. Sindi
+
+# JANGAN LUPA DI GIT PULL YA KIDS
