@@ -7,19 +7,22 @@ const user = db.define("user",
     {
         username: {
             type: DataTypes.STRING(32),
-            primaryKey: true
+            primaryKey: true,
+            allowNull: false
         },
         password: {
-            type: DataTypes.STRING(128)
+            type: DataTypes.STRING(128),
+            allowNull: false
         },
         is_admin: {
             type: DataTypes.BOOLEAN,
-            defaultValue: false
+            defaultValue: false,
+            allowNull: false
         }
     },
     {
         freezeTableName: true,
-        timestamps: false,
+        timestamps: false
     }
 );
 
