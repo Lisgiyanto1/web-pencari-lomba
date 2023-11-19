@@ -24,5 +24,4 @@ const dosen = db.define("dosen",
     }
 );
 
-dosen.removeAttribute("id");
 export default dosen;
