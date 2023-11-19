@@ -15,8 +15,8 @@ import route from './routes/web.js';
 // Express middleware
 app.set('view engine', 'ejs');
 
-app.use(express.static('./public/views'));
 app.use(express.json());
+app.use(express.static("public"));
 
 app.use('/', route);
 
