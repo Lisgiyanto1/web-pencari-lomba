@@ -29,5 +29,4 @@ const user = db.define("user",
     }
 );
 
-user.removeAttribute("id");
 export default user;
