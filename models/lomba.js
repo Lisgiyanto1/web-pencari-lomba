@@ -1,8 +1,8 @@
-import { DataTypes } from "sequelize";
-import db from "../database.js";
+import { DataTypes } from 'sequelize';
+import db from '../database.js';
 
 // Model
-const lomba = db.define("lomba",
+const lomba = db.define('lomba',
     {
         nama: {
             type: DataTypes.STRING(256),
@@ -17,7 +17,7 @@ const lomba = db.define("lomba",
             allowNull: false
         },
         status: {
-            type: DataTypes.ENUM(["OPEN", "CLOSED", "FULL"]),
+            type: DataTypes.ENUM(['OPEN', 'CLOSED', 'FULL']),
             allowNull: false
         },
         kuota_tim: {

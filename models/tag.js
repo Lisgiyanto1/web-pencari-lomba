@@ -1,10 +1,10 @@
-import db from "../database.js";
+import db from '../database.js';
 
-import kategori from "./kategori.js";
-import lomba from "./lomba.js";
+import kategori from './kategori.js';
+import lomba from './lomba.js';
 
 // Model
-const tag = db.define("tag",
+const tag = db.define('tag',
     {},
     {
         freezeTableName: true,
@@ -15,16 +15,16 @@ const tag = db.define("tag",
 // FK constraint
 kategori.hasMany(tag,
     {
-        foreignKey: "kategori",
-        onDelete: "cascade",
-        onUpdate: "cascade"
+        foreignKey: 'kategori',
+        onDelete: 'cascade',
+        onUpdate: 'cascade'
     }
 );
 lomba.hasMany(tag,
     {
-        foreignKey: "lomba",
-        onDelete: "cascade",
-        onUpdate: "cascade"
+        foreignKey: 'lomba',
+        onDelete: 'cascade',
+        onUpdate: 'cascade'
     }
 );
 

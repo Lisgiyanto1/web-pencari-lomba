@@ -1,8 +1,8 @@
-import { DataTypes } from "sequelize";
-import db from "../database.js";
+import { DataTypes } from 'sequelize';
+import db from '../database.js';
 
 // Model
-const dosen = db.define("dosen",
+const dosen = db.define('dosen',
     {
         nip: {
             type: DataTypes.STRING(18),

@@ -1,8 +1,8 @@
-import { DataTypes } from "sequelize";
-import db from "../database.js";
+import { DataTypes } from 'sequelize';
+import db from '../database.js';
 
 // Model
-const kategori = db.define("kategori",
+const kategori = db.define('kategori',
     {
         kategori: {
             type: DataTypes.STRING(128),

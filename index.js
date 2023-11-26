@@ -16,7 +16,7 @@ import route from './routes/web.js';
 app.set('view engine', 'ejs');
 
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static('public'));
 
 app.use('/', route);
 
