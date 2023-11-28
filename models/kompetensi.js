@@ -1,10 +1,10 @@
-import db from "../database.js";
+import db from '../database.js';
 
-import dosen from "./dosen.js";
-import kategori from "./kategori.js";
+import dosen from './dosen.js';
+import kategori from './kategori.js';
 
 // Model
-const kompetensi = db.define("kompetensi",
+const kompetensi = db.define('kompetensi',
     {},
     {
         freezeTableName: true,
@@ -15,16 +15,16 @@ const kompetensi = db.define("kompetensi",
 // FK constraint
 dosen.hasMany(kompetensi,
     {
-        foreignKey: "dosen",
-        onDelete: "cascade",
-        onUpdate: "cascade"
+        foreignKey: 'dosen',
+        onDelete: 'cascade',
+        onUpdate: 'cascade'
     }
 );
 kategori.hasMany(kompetensi,
     {
-        foreignKey: "kategori",
-        onDelete: "cascade",
-        onUpdate: "cascade"
+        foreignKey: 'kategori',
+        onDelete: 'cascade',
+        onUpdate: 'cascade'
     }
 );
 

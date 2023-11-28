@@ -1,5 +1,5 @@
 // Model
-import User from "../models/user.js";
+import User from '../models/user.js';
 
 // User Controller
 export async function c(req, res) {

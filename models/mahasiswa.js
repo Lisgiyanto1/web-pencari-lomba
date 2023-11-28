@@ -1,10 +1,10 @@
-import { DataTypes } from "sequelize";
-import db from "../database.js";
+import { DataTypes } from 'sequelize';
+import db from '../database.js';
 
-import user from "./user.js";
+import user from './user.js';
 
 // Model
-const mahasiswa = db.define("mahasiswa",
+const mahasiswa = db.define('mahasiswa',
     {
         nim: {
             type: DataTypes.STRING(16),
@@ -36,9 +36,9 @@ const mahasiswa = db.define("mahasiswa",
 // FK
 user.hasOne(mahasiswa,
     {
-        foreignKey: "username",
-        onDelete: "cascade",
-        onUpdate: "cascade"
+        foreignKey: 'username',
+        onDelete: 'cascade',
+        onUpdate: 'cascade'
     }
 );
 export default mahasiswa;

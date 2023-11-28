@@ -1,8 +1,8 @@
-import { DataTypes } from "sequelize";
-import db from "../database.js";
+import { DataTypes } from 'sequelize';
+import db from '../database.js';
 
 // Model
-const user = db.define("user",
+const user = db.define('user',
     {
         username: {
             type: DataTypes.STRING(32),
