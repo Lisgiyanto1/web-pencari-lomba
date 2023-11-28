@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1><%=textA%></h1>
-    <h2><%=textB%></h2>
-    <p><%=textC%></p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>WebL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="../public/styles/styles.css"
+    />
+    <!-- import tailwind -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- import image -->
+    <link
+      rel="icon"
+      href="../public/image/WebL.png"
+    />
+    <link
+      rel="image_src"
+      href="../public/image/Banner.png"
+    />
+    <link
+      rel="pamflet_src"
+      href="../public/image/Lomba2021.png"
+    />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body class="font-monstserrat bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+    <%- include('auth-page/navIn.ejs') %> <%- include('body.ejs') %> <%- include('footer.ejs') %>
+  </body>
+  <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+  <!-- import tailwind.config.js -->
+  <script src="../public/javascript/global.js"></script>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
 </html>
