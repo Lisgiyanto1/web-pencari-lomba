@@ -5,11 +5,7 @@ import lomba from './lomba.js';
 
 // Model
 const tag = db.define('tag',
-    {},
-    {
-        freezeTableName: true,
-        timestamps: false
-    }
+    {}
 );
 
 // FK constraint

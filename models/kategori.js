@@ -8,10 +8,6 @@ const kategori = db.define('kategori',
             type: DataTypes.STRING(128),
             allowNull: false
         }
-    },
-    {
-        freezeTableName: true,
-        timestamps: false
     }
 );
 

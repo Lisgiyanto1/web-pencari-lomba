@@ -17,7 +17,12 @@ const db = new Sequelize({
     username: DB_USER,
     password: DB_PASS,
 
-    logging: false
+    logging: false,
+
+    define: {
+        freezeTableName: true,
+        timestamps: false
+    }
 });
 
 export default db;

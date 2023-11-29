@@ -26,10 +26,6 @@ const mahasiswa = db.define('mahasiswa',
             type: DataTypes.STRING(),
             allowNull: false
         }
-    },
-    {
-        freezeTableName: true,
-        timestamps: false,
     }
 );
 

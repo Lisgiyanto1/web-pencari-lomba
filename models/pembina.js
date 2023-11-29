@@ -5,11 +5,7 @@ import dosen from './dosen.js';
 
 // Model
 const pembina = db.define('pembina',
-    {},
-    {
-        freezeTableName: true,
-        timestamps: false
-    }
+    {}
 );
 
 // FK constraint

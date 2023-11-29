@@ -17,10 +17,6 @@ const dosen = db.define('dosen',
             type: DataTypes.STRING(16),
             allowNull: false,
         },
-    },
-    {
-        freezeTableName: true,
-        timestamps: false,
     }
 );
 

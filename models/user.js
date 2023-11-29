@@ -22,10 +22,6 @@ const user = db.define('user',
             type: DataTypes.STRING(512),
             allowNull: false
         }
-    },
-    {
-        freezeTableName: true,
-        timestamps: false
     }
 );
 

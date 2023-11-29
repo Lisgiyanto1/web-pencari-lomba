@@ -5,11 +5,7 @@ import kategori from './kategori.js';
 
 // Model
 const kompetensi = db.define('kompetensi',
-    {},
-    {
-        freezeTableName: true,
-        timestamps: false
-    }
+    {}
 );
 
 // FK constraint
