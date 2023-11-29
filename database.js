@@ -10,14 +10,19 @@ const { DB_HOST, DB_NAME, DB_USER, DB_PASS } = process.env;
 
 // Koneksi tapi bukan .php
 const db = new Sequelize({
-    dialect: 'mysql',
+  dialect: 'mysql',
 
-    host: DB_HOST,
-    database: DB_NAME,
-    username: DB_USER,
-    password: DB_PASS,
+  host: DB_HOST,
+  database: DB_NAME,
+  username: DB_USER,
+  password: DB_PASS,
 
-    logging: false
+  logging: false,
+
+  define: {
+    freezeTableName: true,
+    timestamps: false,
+  },
 });
 
 export default db;
