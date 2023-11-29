@@ -30,10 +30,6 @@ const lomba = db.define('lomba',
             defaultValue: 1,
             allowNull: false,
         }
-    },
-    {
-        freezeTableName: true,
-        timestamps: false
     }
 );
 

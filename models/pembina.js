@@ -3,9 +3,6 @@ import db from '../database.js';
 import lomba from './lomba.js';
 import dosen from './dosen.js';
 
-// Model
-const pembina = db.define('pembina', {});
-
 // FK constraint
 lomba.hasMany(pembina, {
   foreignKey: 'lomba',

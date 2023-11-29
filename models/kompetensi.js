@@ -3,9 +3,6 @@ import db from '../database.js';
 import dosen from './dosen.js';
 import kategori from './kategori.js';
 
-// Model
-const kompetensi = db.define('kompetensi', {});
-
 // FK constraint
 dosen.hasMany(kompetensi, {
   foreignKey: 'dosen',
