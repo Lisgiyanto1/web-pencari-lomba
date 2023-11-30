@@ -1,3 +1,4 @@
+import { DataTypes } from 'sequelize';
 import db from '../database.js';
 
 import lomba from './lomba.js';
