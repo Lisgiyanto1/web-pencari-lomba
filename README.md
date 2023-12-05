@@ -5,7 +5,7 @@
 1. Dzakiy Faisal Abduh (4.33.21.0.08)
 2. Lisgiyanto Sofiyan (4.33.21.0.15)
 3. Rizky Dwi Purnama (4.33.21.0.22)
-4. Sindi (4.33.21.0.24)
+4. Sindi (4.33.21.0.24) //sindilur
 
 ## Reminder
 
